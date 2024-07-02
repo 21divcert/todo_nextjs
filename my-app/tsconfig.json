@@ -1,26 +1,26 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "lib": ["dom", "dom.iterable", "esnext"], // 사용할 라이브러리 설정
+    "allowJs": true, // JavaScript 파일 허용
+    "skipLibCheck": true, // 라이브러리 검사 건너뛰기
+    "strict": true, // 엄격한 타입 검사
+    "noEmit": true, // 결과물 내보내지 않기
+    "esModuleInterop": true, // ES 모듈 호환성
+    "module": "esnext", // 모듈 시스템 설정
+    "moduleResolution": "bundler", // 모듈 해석 방법 설정
+    "resolveJsonModule": true, // JSON 모듈 해석
+    "isolatedModules": true, // 개별 모듈 처리
+    "jsx": "preserve", // JSX 보존
+    "incremental": true, // 증분 컴파일 사용
     "plugins": [
       {
-        "name": "next"
+        "name": "next" // Next.js 플러그인 사용
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"] // 경로 별칭 설정
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"], // 포함할 파일들
+  "exclude": ["node_modules"] // 제외할 파일들
 }
