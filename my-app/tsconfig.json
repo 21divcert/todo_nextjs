@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"], // 사용할 라이브러리 설정
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // 사용할 라이브러리 설정
     "allowJs": true, // JavaScript 파일 허용
     "skipLibCheck": true, // 라이브러리 검사 건너뛰기
     "strict": true, // 엄격한 타입 검사
@@ -18,9 +22,19 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"] // 경로 별칭 설정
-    }
+      "@/*": [
+        "./src/*"
+      ] // 경로 별칭 설정
+    },
+    "target": "ES2017"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"], // 포함할 파일들
-  "exclude": ["node_modules"] // 제외할 파일들
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ], // 포함할 파일들
+  "exclude": [
+    "node_modules"
+  ] // 제외할 파일들
 }
